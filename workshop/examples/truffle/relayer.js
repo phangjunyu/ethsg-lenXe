@@ -8,6 +8,7 @@ const NetworkProxy = artifacts.require('./KyberNetworkProxy.sol');
 const KNC = artifacts.require('./mockTokens/KyberNetworkCrystal.sol');
 const OMG = artifacts.require('./mockTokens/OmiseGo.sol');
 const MANA = artifacts.require('./mockTokens/Mana.sol');
+// const Relayer = artifacts.require('./ethSG/Relayer.sol');
 
 function stdlog(input) {
   console.log(`${moment().format('YYYY-MM-DD HH:mm:ss.SSS')}] ${input}`);
@@ -35,12 +36,14 @@ module.exports = async (callback) => {
 
   // Set the instances
   const NetworkProxyInstance = await NetworkProxy.at(NetworkProxy.address);
+  // const Relayer = await Relayer.at(Relayer.address);
   const KNCInstance = await KNC.at(KNC.address);
   const OMGInstance = await OMG.at(OMG.address);
   const MANAInstance = await MANA.at(MANA.address);
 
   stdlog('- START -');
   stdlog(`KyberNetworkProxy (${NetworkProxy.address})`);
+  // stdlog(`Relayer (${Relayer.address})`);
 
   stdlog(`KNC balance of ${userWallet} = ${web3.utils.fromWei(await KNCInstance.balanceOf(userWallet))}`);
   stdlog(`OMG balance of ${userWallet} = ${web3.utils.fromWei(await OMGInstance.balanceOf(userWallet))}`);
@@ -58,6 +61,8 @@ module.exports = async (callback) => {
     OMG.address, // destToken
     web3.utils.toWei(new BN(100)), // srcQty
   ));
+
+  stdlog(`KNC to OMG expected rate: ${expectedRate}, slippage rate: ${slippageRate}`);
 
   result = await NetworkProxyInstance.trade(
     KNC.address, // srcToken

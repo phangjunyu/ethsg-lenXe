@@ -8,7 +8,8 @@ contract Relayer{
     // mapping of minRate to address of reserve
     // mapping(uint256 => address) kyberOB;
 
-    event Rates(address indexed sender, uint minConversionRate, uint slippageRate);
+    event Query(address indexed sender, uint minConversionRate, uint slippageRate);
+    event Swap(address indexed sender, ERC20 srcToken, ERC20 destToken);
 
     KyberNetworkProxy public proxy;
     ERC20 constant internal ETH_TOKEN_ADDRESS = ERC20(0x00eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee);
@@ -20,61 +21,68 @@ contract Relayer{
         proxy = _proxy;
     }
 
+    event callEvent(address sender, address origin, address from);
+    function calledFunction() public {
+	callEvent(msg.sender, tx.origin, this);
+    }
+
     /// @dev should query KyberNetworkProxy
     /// @param srcToken source token contract address
     /// @param srcQty amount of source tokens
     /// @param destToken destination token contract address
     function queryKyber(
         ERC20 srcToken,
-        uint256 srcQty,
+        uint srcQty,
         ERC20 destToken
-    ) public returns (uint256 minRate, uint256 slippageRate) {
-        uint256 minConversionRate;
-        //uint256 slippageRate;
+    ) public returns (uint minConversionRate, uint slippageRate) {
+        // uint256 minConversionRate;
+        // uint256 slippageRate;
         // Get the minimum conversion rate
-        // (minConversionRate, slippageRate) = proxy.getExpectedRate(srcToken, destToken, srcQty);
-        // check the reserves
-        // get rates and put into a mapping from minimum rates to addresses of the reserves)
+        (minConversionRate, slippageRate) = proxy.getExpectedRate(srcToken, destToken, srcQty);
+        // check each reserve
+        // get rate of each and liquidity provided by each
+        // put into mapping
         // Log the event
-        // Rates(msg.sender, minConversionRate, slippageRate);
+        Query(msg.sender, minConversionRate, slippageRate);
+        return (minConversionRate, slippageRate);
     }
 
-    function query0xOB(
+    /// @dev Swap the user's ERC20 token to another ERC20 token
+    /// @param srcToken source token contract address
+    /// @param srcQty amount of source tokens
+    /// @param destToken destination token contract address
+    /// @param destAddress address to send swapped tokens to
+    /// @param maxDestAmount address to send swapped tokens to
+    //  Taken from contracts/examples/Trade.sol
+    function execSwap(
         ERC20 srcToken,
-        uint256 srcQty,
-        ERC20 destToken
-    ) public returns (uint256 minRate){
+        uint srcQty,
+        ERC20 destToken,
+        address destAddress,
+        uint maxDestAmount
+    ) public {
+        uint minConversionRate;
+        // Check that the token transferFrom has succeeded
+        require(srcToken.transferFrom(msg.sender, address(this), srcQty));
+        // Mitigate ERC20 Approve front-running attack, by initially setting
+        // allowance to 0
+        require(srcToken.approve(address(proxy), 0));
+        // Set the spender's token allowance to tokenQty
+        require(srcToken.approve(address(proxy), srcQty));
+        // Get the minimum conversion rate
+        (minConversionRate,) = proxy.getExpectedRate(srcToken, destToken, srcQty);
+        // Swap the ERC20 token and send to destAddress
+        proxy.trade(
+            srcToken,
+            srcQty,
+            destToken,
+            destAddress,
+            maxDestAmount,
+            minConversionRate,
+            0
+        );
 
-    }
-
-    function compare(
-        uint256 kyberRate,
-        uint256 ZxRate
-    ) private returns (address optimalAddress) {
-
-    }
-
-    //
-    function decision(ERC20 srcToken, uint srcQty, ERC20 destToken) public {
-        //check KyberOB
-        // kyberOB = queryKyberOB(srcToken, srcQty, destToken);
-        //check 0xOB
-        // ZxOB = ZxService.queryZxOB(srcToken, srcQty, destToken);
-        //compare and returns 0, 1 or 2
-        // uint result = compare(kyberOB, ZxOB);
-        uint32 result = 0;
-        if (result == 0) {
-            //if 0, means execute Trade with Kyber DEX
-            // tradeContract.execSwap(srcToken, srcQty, destToken);
-            //a Swap Event will be emitted
-        } else if (result == 1) {
-            //if 1, means execute Trade with 0xOB
-            // ZxService.execSwap(srcToken, srcQty, destToken);
-        } else {
-            //if 2, means both 0 and 1 did not have the desired rates
-            //and the final option would be to post on 0x's orderbook
-            //UI should prompt and ask if proceed
-            // ZxService.post0xOB(srcToken, srcQty, destToken);
-        }
+        // Log the event
+        Swap(msg.sender, srcToken, destToken);
     }
 }
