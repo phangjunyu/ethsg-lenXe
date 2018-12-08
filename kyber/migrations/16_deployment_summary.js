@@ -17,7 +17,7 @@ const SwapEtherToToken = artifacts.require('./examples/SwapEtherToToken.sol');
 const SwapTokenToEther = artifacts.require('./examples/SwapTokenToEther.sol');
 const SwapTokenToToken = artifacts.require('./examples/SwapTokenToToken.sol');
 const Trade = artifacts.require('./examples/Trade.sol');
-const Relayer = artifacts.require('./ethSG/relayer.sol');
+const Relayer = artifacts.require('./ethSG/Relayer.sol');
 
 const KNC = artifacts.require('./mockTokens/KyberNetworkCrystal.sol');
 const OMG = artifacts.require('./mockTokens/OmiseGo.sol');
