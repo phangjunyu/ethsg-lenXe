@@ -1,11 +1,11 @@
 pragma solidity ^0.4.18;
 import "../KyberNetworkProxy.sol";
 // import "../../examples/Trade.sol" as tradeContract;
-// import "./ZxService.sol" as ZxService;
+// import "./ZxService.sol" as ZxService; fix this please
 
 /// @title Relayer that allows user interaction  with Kyber Network and 0x 
 contract Relayer{
-    //mapping of minRate to address of reserve
+    // mapping of minRate to address of reserve
     // mapping(uint256 => address) kyberOB;
 
     event Rates(address indexed sender, uint minConversionRate, uint slippageRate);
