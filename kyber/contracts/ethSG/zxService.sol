@@ -1,19 +1,20 @@
 pragma solidity ^0.4.18;
+import "../KyberNetworkProxy.sol";
 
-contract 0xService{
+contract zxService{
 
-    function 0xService(){
+    function zxService() public {
         //constructor
     }
 
-    function query0xOB(
+    function queryzxOB(
         ERC20 srcToken, 
         uint srcQty, 
         ERC20 destToken) public{
 
     }
 
-    function execSwap0x(
+    function execSwapzx(
         ERC20 srcToken, 
         uint srcQty, 
         ERC20 destToken) public{
@@ -22,17 +23,17 @@ contract 0xService{
             //should emit an Event
     }
 
-    function post0xOB(
+    function postzxOB(
         ERC20 srcToken, 
         uint srcQty, 
         ERC20 destToken) public{
             //should emit an event
             //call watch0xOB to start watching the chain
-            watch0xOB()
+            watchzxOB();
     }
 
 
-    function watch0xOB(){
+    function watchzxOB() public {
         //listener to watch for event and return to UI
     }
 }

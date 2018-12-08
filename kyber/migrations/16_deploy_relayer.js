@@ -4,8 +4,7 @@ const NetworkProxy = artifacts.require('./KyberNetworkProxy.sol');
 
 const Relayer = artifacts.require('./ethSG/relayer.sol')
 
-module.exports = async (deployer, network, accounts) => {
-  const admin = accounts[0];
+module.exports = async (deployer) => {
 
   await deployer.deploy(Relayer, NetworkProxy.address);
 };
