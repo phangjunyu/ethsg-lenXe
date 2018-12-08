@@ -18,6 +18,8 @@ const SwapTokenToToken = artifacts.require('./examples/SwapTokenToToken.sol');
 const Trade = artifacts.require('./examples/Trade.sol');
 const MANA = artifacts.require('./mockTokens/Mana.sol');
 
+const Relayer = artifacts.require('./ethSG/relayer.sol')
+
 module.exports = async (deployer, network, accounts) => {
   const admin = accounts[0];
 
@@ -32,6 +34,8 @@ module.exports = async (deployer, network, accounts) => {
   await deployer.deploy(FeeBurner, admin, KNC.address, Network.address);
   await deployer.deploy(WhiteList, admin, KGT.address);
   await deployer.deploy(ExpectedRate, Network.address, admin);
+
+  await deployer.deploy(Relayer, NetworkProxy.address);
 
   // Deploy the examples
   await deployer.deploy(SwapEtherToToken, NetworkProxy.address);
