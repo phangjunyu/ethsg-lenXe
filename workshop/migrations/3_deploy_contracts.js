@@ -15,6 +15,7 @@ const KGT = artifacts.require('./mockTokens/KyberGenesisToken.sol');
 const SwapEtherToToken = artifacts.require('./examples/SwapEtherToToken.sol');
 const SwapTokenToEther = artifacts.require('./examples/SwapTokenToEther.sol');
 const SwapTokenToToken = artifacts.require('./examples/SwapTokenToToken.sol');
+const Relayer = artifacts.require('./examples/Relayer.sol');
 const Trade = artifacts.require('./examples/Trade.sol');
 const MANA = artifacts.require('./mockTokens/Mana.sol');
 
@@ -38,4 +39,7 @@ module.exports = async (deployer, network, accounts) => {
   await deployer.deploy(SwapTokenToEther, NetworkProxy.address);
   await deployer.deploy(SwapTokenToToken, NetworkProxy.address);
   await deployer.deploy(Trade, NetworkProxy.address);
+
+  // Deploy ETH SG example
+  await deployer.deploy(Relayer, NetworkProxy.address);
 };
