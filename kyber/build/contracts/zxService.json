@@ -1,0 +1,1103 @@
+{
+  "contractName": "zxService",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "srcToken",
+          "type": "address"
+        },
+        {
+          "name": "srcQty",
+          "type": "uint256"
+        },
+        {
+          "name": "destToken",
+          "type": "address"
+        }
+      ],
+      "name": "queryzxOB",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "srcToken",
+          "type": "address"
+        },
+        {
+          "name": "srcQty",
+          "type": "uint256"
+        },
+        {
+          "name": "destToken",
+          "type": "address"
+        }
+      ],
+      "name": "execSwapzx",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "srcToken",
+          "type": "address"
+        },
+        {
+          "name": "srcQty",
+          "type": "uint256"
+        },
+        {
+          "name": "destToken",
+          "type": "address"
+        }
+      ],
+      "name": "postzxOB",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "watchzxOB",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101128061001e6000396000f300606060405260043610605c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166305a3dafd81146061578063cd6ccfb2146073578063dad7cb861460a6578063ee2476531460a6575b600080fd5b3415606b57600080fd5b607160d9565b005b3415607d57600080fd5b607173ffffffffffffffffffffffffffffffffffffffff600435811690602435906044351660db565b341560b057600080fd5b607173ffffffffffffffffffffffffffffffffffffffff600435811690602435906044351660e1565b565b60e160d9565b5050505600a165627a7a723058203a33574f0fa2d2c0010edac437f7a3df2ad770c7beb383d6d117bafa631c8ae40029",
+  "deployedBytecode": "0x606060405260043610605c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166305a3dafd81146061578063cd6ccfb2146073578063dad7cb861460a6578063ee2476531460a6575b600080fd5b3415606b57600080fd5b607160d9565b005b3415607d57600080fd5b607173ffffffffffffffffffffffffffffffffffffffff600435811690602435906044351660db565b341560b057600080fd5b607173ffffffffffffffffffffffffffffffffffffffff600435811690602435906044351660e1565b565b60e160d9565b5050505600a165627a7a723058203a33574f0fa2d2c0010edac437f7a3df2ad770c7beb383d6d117bafa631c8ae40029",
+  "sourceMap": "64:716:28:-;;;91:59;;;;;;;;64:716;;;;;;",
+  "deployedSourceMap": "64:716:28:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;685:92;;;;;;;;;;;;;;447:228;;;;;;;;;;;;;;;;;;;;;;;;277:162;;;;;;;;;;;;;;;;;;;;;;;;685:92;:::o;447:228::-;656:11;:9;:11::i;:::-;447:228;;;:::o",
+  "source": "pragma solidity ^0.4.18;\r\nimport \"../KyberNetworkProxy.sol\";\r\n\r\ncontract zxService{\r\n\r\n    function zxService() public {\r\n        //constructor\r\n    }\r\n\r\n    function queryzxOB(\r\n        ERC20 srcToken, \r\n        uint srcQty, \r\n        ERC20 destToken) public{\r\n\r\n    }\r\n\r\n    function execSwapzx(\r\n        ERC20 srcToken, \r\n        uint srcQty, \r\n        ERC20 destToken) public{\r\n            \r\n\r\n            //should emit an Event\r\n    }\r\n\r\n    function postzxOB(\r\n        ERC20 srcToken, \r\n        uint srcQty, \r\n        ERC20 destToken) public{\r\n            //should emit an event\r\n            //call watch0xOB to start watching the chain\r\n            watchzxOB();\r\n    }\r\n\r\n\r\n    function watchzxOB() public {\r\n        //listener to watch for event and return to UI\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\phangjunyu\\desktop\\ethsg-lenXe\\kyber\\contracts\\ethSG\\zxService.sol",
+  "ast": {
+    "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/ethSG/zxService.sol",
+    "exportedSymbols": {
+      "zxService": [
+        10206
+      ]
+    },
+    "id": 10207,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10163,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/KyberNetworkProxy.sol",
+        "file": "../KyberNetworkProxy.sol",
+        "id": 10164,
+        "nodeType": "ImportDirective",
+        "scope": 10207,
+        "sourceUnit": 5457,
+        "src": "26:34:28",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10206,
+        "linearizedBaseContracts": [
+          10206
+        ],
+        "name": "zxService",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 10167,
+              "nodeType": "Block",
+              "src": "119:31:28",
+              "statements": []
+            },
+            "id": 10168,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "zxService",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10166,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "119:0:28"
+            },
+            "scope": 10206,
+            "src": "91:59:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10177,
+              "nodeType": "Block",
+              "src": "259:10:28",
+              "statements": []
+            },
+            "id": 10178,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "queryzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10175,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10170,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "187:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10169,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "187:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10172,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "213:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10171,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10174,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "236:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10173,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "236:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10176,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "259:0:28"
+            },
+            "scope": 10206,
+            "src": "158:111:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10187,
+              "nodeType": "Block",
+              "src": "379:60:28",
+              "statements": []
+            },
+            "id": 10188,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "execSwapzx",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10185,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10180,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "307:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10179,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "307:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10182,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "333:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10181,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "333:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10184,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "356:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10183,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "356:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:0:28"
+            },
+            "scope": 10206,
+            "src": "277:162:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10200,
+              "nodeType": "Block",
+              "src": "547:128:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 10197,
+                      "name": "watchzxOB",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10205,
+                      "src": "656:9:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 10198,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "656:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10199,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:11:28"
+                }
+              ]
+            },
+            "id": 10201,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "postzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10190,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "475:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10189,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "475:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10192,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "501:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10191,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "501:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10194,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "524:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10193,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "524:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "464:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10196,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "547:0:28"
+            },
+            "scope": 10206,
+            "src": "447:228:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10204,
+              "nodeType": "Block",
+              "src": "713:64:28",
+              "statements": []
+            },
+            "id": 10205,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "watchzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "703:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10203,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:28"
+            },
+            "scope": 10206,
+            "src": "685:92:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10207,
+        "src": "64:716:28"
+      }
+    ],
+    "src": "0:780:28"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/ethSG/zxService.sol",
+    "exportedSymbols": {
+      "zxService": [
+        10206
+      ]
+    },
+    "id": 10207,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10163,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/KyberNetworkProxy.sol",
+        "file": "../KyberNetworkProxy.sol",
+        "id": 10164,
+        "nodeType": "ImportDirective",
+        "scope": 10207,
+        "sourceUnit": 5457,
+        "src": "26:34:28",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10206,
+        "linearizedBaseContracts": [
+          10206
+        ],
+        "name": "zxService",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 10167,
+              "nodeType": "Block",
+              "src": "119:31:28",
+              "statements": []
+            },
+            "id": 10168,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "zxService",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10166,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "119:0:28"
+            },
+            "scope": 10206,
+            "src": "91:59:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10177,
+              "nodeType": "Block",
+              "src": "259:10:28",
+              "statements": []
+            },
+            "id": 10178,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "queryzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10175,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10170,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "187:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10169,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "187:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10172,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "213:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10171,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10174,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10178,
+                  "src": "236:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10173,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "236:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10176,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "259:0:28"
+            },
+            "scope": 10206,
+            "src": "158:111:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10187,
+              "nodeType": "Block",
+              "src": "379:60:28",
+              "statements": []
+            },
+            "id": 10188,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "execSwapzx",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10185,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10180,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "307:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10179,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "307:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10182,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "333:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10181,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "333:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10184,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10188,
+                  "src": "356:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10183,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "356:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:0:28"
+            },
+            "scope": 10206,
+            "src": "277:162:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10200,
+              "nodeType": "Block",
+              "src": "547:128:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 10197,
+                      "name": "watchzxOB",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10205,
+                      "src": "656:9:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 10198,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "656:11:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10199,
+                  "nodeType": "ExpressionStatement",
+                  "src": "656:11:28"
+                }
+              ]
+            },
+            "id": 10201,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "postzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10190,
+                  "name": "srcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "475:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10189,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "475:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10192,
+                  "name": "srcQty",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "501:11:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10191,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "501:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10194,
+                  "name": "destToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10201,
+                  "src": "524:15:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$1559",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10193,
+                    "name": "ERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1559,
+                    "src": "524:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$1559",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "464:76:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10196,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "547:0:28"
+            },
+            "scope": 10206,
+            "src": "447:228:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10204,
+              "nodeType": "Block",
+              "src": "713:64:28",
+              "statements": []
+            },
+            "id": 10205,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "watchzxOB",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "703:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 10203,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:28"
+            },
+            "scope": 10206,
+            "src": "685:92:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10207,
+        "src": "64:716:28"
+      }
+    ],
+    "src": "0:780:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0-beta.1",
+  "updatedAt": "2018-12-08T20:25:19.987Z"
+}
