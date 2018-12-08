@@ -1,24 +1,26 @@
 pragma solidity ^0.4.18;
 import "../KyberNetworkProxy.sol";
 
-contract Relayer{
 
+/// @title Relayer that allows user interaction  with Kyber Network and 0x 
+contract Relayer{
 
     event Rates(address indexed sender, uint minConversionRate, uint slippageRate);
 
     KyberNetworkProxy public proxy;
     ERC20 constant internal ETH_TOKEN_ADDRESS = ERC20(0x00eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee);
 
-    //@dev Contract contstructor
-    //@param _proxy KyberNetworkProxy contract address
-    function Relayer(KyberNetworkProxy _proxy) public {
+    /// @dev Contract constructor
+    /// @param _proxy KyberNetworkProxy contract address
+    /// @param TODO: something that talks to 0x
+    constructor Relayer(KyberNetworkProxy _proxy) public {
         proxy = _proxy;
     }
 
-    //@dev should query KyberOB.sol 
-    //@param srcToken source token contract address
-    //@param srcQty amount of source tokens
-    //@param destToken destination token contract address
+    /// @dev should query KyberOB.sol 
+    /// @param srcToken source token contract address
+    /// @param srcQty amount of source tokens
+    /// @param destToken destination token contract address
     function queryKyberOB(
         ERC20 srcToken,
         uint srcQty,
@@ -29,6 +31,9 @@ contract Relayer{
         // Get the minimum conversion rate
         (minConversionRate, slippageRate) = proxy.getExpectedRate(srcToken, destToken, srcQty);
 
+        // check the reserves
+        // get rates and put into a mapping from minimum rates to addresses of the reserves)
+        
         // Log the event
         // Rates(msg.sender, minConversionRate, slippageRate);
     }
