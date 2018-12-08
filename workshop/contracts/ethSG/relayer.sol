@@ -15,28 +15,49 @@ contract Relayer{
         proxy = _proxy;
     }
 
-    //@dev Swap the user's ERC20 token to another ERC20 token
+    //@dev should query KyberOB.sol 
     //@param srcToken source token contract address
     //@param srcQty amount of source tokens
     //@param destToken destination token contract address
-    //@param destAddress address to send swapped tokens to
-    //@param maxDestAmount address to send swapped tokens to
     function queryKyberOB(
         ERC20 srcToken,
         uint srcQty,
         ERC20 destToken
-    ) public {
+    ) public returns (uint256 minRate, uint256 slippageRate) {
         uint minConversionRate;
         uint slippageRate;
-
         // Get the minimum conversion rate
         (minConversionRate, slippageRate) = proxy.getExpectedRate(srcToken, destToken, srcQty);
 
         // Log the event
-        Rates(msg.sender, minConversionRate, slippageRate);
+        // Rates(msg.sender, minConversionRate, slippageRate);
     }
 
-    function call0xOB() public {
+    function query0xOB(
+        ERC20 srcToken,
+        uint srcQty,
+        ERC20 destToken
+    ) public returns (uint256 minRate){
 
+    }
+
+    function compare(
+        uint kyberRate,
+        uint 0xRate
+    ) private returns (address optimalAddress)){
+
+    }
+
+    function post0xOB(){
+
+    }
+
+    //
+    function decision(){
+        //check KyberOB
+        //check 0xOB
+        //compare
+        //if there is optimal, execute trade with desired DEX
+        //if both are NOT optimal, post trade on 0xOB
     }
 }
