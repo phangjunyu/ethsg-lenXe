@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-import "../workshop/contracts/KyberNetworkProxy.sol";
+import "../KyberNetworkProxy.sol";
 
 contract Relayer{
 
