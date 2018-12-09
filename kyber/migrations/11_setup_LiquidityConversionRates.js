@@ -40,6 +40,7 @@ module.exports = async (deployer, network, accounts) => {
   tx(await LiquidityConversionRatesInstance.setReserveAddress(AutomatedReserve.address), 'setReserveAddress()');
 
   // Transfer the required ETH/Token inventory to the automated reserve
+  /* 
   const MANAAmount = (
     new BN(tokenConfig.AutomatedReserve.MANA.Tokens)
       .mul(new BN(10).pow(await MANAInstance.decimals()))
@@ -50,7 +51,7 @@ module.exports = async (deployer, network, accounts) => {
       { from: admin, value: web3.utils.toWei(new BN(tokenConfig.AutomatedReserve.MANA.Ether)) },
     ),
     'sendTransaction()',
-  );
+  ); */
 
   // Set the liquidity parameters
   tx(await LiquidityConversionRatesInstance.setLiquidityParams(

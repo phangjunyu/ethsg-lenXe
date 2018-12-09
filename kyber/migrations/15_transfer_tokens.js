@@ -65,10 +65,12 @@ module.exports = async (deployer, network, accounts) => {
   tx(await OMGInstance.transfer(Reserve.address, OMGAmount), 'transfer()');
   tx(await SALTInstance.transfer(Reserve.address, SALTAmount), 'transfer()');
   tx(await ZILInstance.transfer(Reserve.address, ZILAmount), 'transfer()');
+  /* 
   tx(
     await ReserveInstance.sendTransaction(
       { from: admin, value: web3.utils.toWei(new BN(100)) },
     ),
     'sendTransaction()',
   );
+  */
 };
