@@ -20,11 +20,6 @@ contract Relayer{
         proxy = _proxy;
     }
 
-    event callEvent(address sender, address origin, address from);
-    function calledFunction() public {
-	callEvent(msg.sender, tx.origin, this);
-    }
-
     /// @dev should query KyberNetworkProxy
     /// @param srcToken source token contract address
     /// @param srcQty amount of source tokens

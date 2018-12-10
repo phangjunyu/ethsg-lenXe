@@ -90,14 +90,14 @@
     "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/examples/SwapTokenToEther.sol",
     "exportedSymbols": {
       "SwapTokenToEther": [
-        10394
+        10481
       ]
     },
-    "id": 10395,
+    "id": 10482,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10286,
+        "id": 10373,
         "literals": [
           "solidity",
           "^",
@@ -110,9 +110,9 @@
       {
         "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/KyberNetworkProxy.sol",
         "file": "../KyberNetworkProxy.sol",
-        "id": 10287,
+        "id": 10374,
         "nodeType": "ImportDirective",
-        "scope": 10395,
+        "scope": 10482,
         "sourceUnit": 5457,
         "src": "28:34:30",
         "symbolAliases": [],
@@ -124,29 +124,29 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10394,
+        "id": 10481,
         "linearizedBaseContracts": [
-          10394
+          10481
         ],
         "name": "SwapTokenToEther",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 10295,
+            "id": 10382,
             "name": "Swap",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 10294,
+              "id": 10381,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10289,
+                  "id": 10376,
                   "indexed": true,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "112:22:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -155,7 +155,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 10288,
+                    "id": 10375,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "112:7:30",
@@ -169,11 +169,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 10291,
+                  "id": 10378,
                   "indexed": false,
                   "name": "srcToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "136:14:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -183,7 +183,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10290,
+                    "id": 10377,
                     "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 1559,
@@ -198,11 +198,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 10293,
+                  "id": 10380,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "152:11:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -211,7 +211,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10292,
+                    "id": 10379,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:4:30",
@@ -230,10 +230,10 @@
           },
           {
             "constant": false,
-            "id": 10297,
+            "id": 10384,
             "name": "proxy",
             "nodeType": "VariableDeclaration",
-            "scope": 10394,
+            "scope": 10481,
             "src": "173:30:30",
             "stateVariable": true,
             "storageLocation": "default",
@@ -243,7 +243,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 10296,
+              "id": 10383,
               "name": "KyberNetworkProxy",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5456,
@@ -258,10 +258,10 @@
           },
           {
             "constant": true,
-            "id": 10302,
+            "id": 10389,
             "name": "ETH_TOKEN_ADDRESS",
             "nodeType": "VariableDeclaration",
-            "scope": 10394,
+            "scope": 10481,
             "src": "210:95:30",
             "stateVariable": true,
             "storageLocation": "default",
@@ -271,7 +271,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 10298,
+              "id": 10385,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1559,
@@ -287,7 +287,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "3078303065656565656565656565656565656565656565656565656565656565656565656565656565656565",
-                  "id": 10300,
+                  "id": 10387,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -310,7 +310,7 @@
                     "typeString": "int_const 1364068194842176056990105843868530818345537040110"
                   }
                 ],
-                "id": 10299,
+                "id": 10386,
                 "name": "ERC20",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -321,7 +321,7 @@
                   "typeString": "type(contract ERC20)"
                 }
               },
-              "id": 10301,
+              "id": 10388,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -339,25 +339,25 @@
           },
           {
             "body": {
-              "id": 10311,
+              "id": 10398,
               "nodeType": "Block",
               "src": "463:33:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10309,
+                    "id": 10396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10307,
+                      "id": 10394,
                       "name": "proxy",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10297,
+                      "referencedDeclaration": 10384,
                       "src": "474:5:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -368,11 +368,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10308,
+                      "id": 10395,
                       "name": "_proxy",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10304,
+                      "referencedDeclaration": 10391,
                       "src": "482:6:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -385,13 +385,13 @@
                       "typeString": "contract KyberNetworkProxy"
                     }
                   },
-                  "id": 10310,
+                  "id": 10397,
                   "nodeType": "ExpressionStatement",
                   "src": "474:14:30"
                 }
               ]
             },
-            "id": 10312,
+            "id": 10399,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -399,15 +399,15 @@
             "name": "SwapTokenToEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10305,
+              "id": 10392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10304,
+                  "id": 10391,
                   "name": "_proxy",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10312,
+                  "scope": 10399,
                   "src": "430:24:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -417,7 +417,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10303,
+                    "id": 10390,
                     "name": "KyberNetworkProxy",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 5456,
@@ -435,12 +435,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 10306,
+              "id": 10393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "463:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "404:92:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -448,12 +448,12 @@
           },
           {
             "body": {
-              "id": 10315,
+              "id": 10402,
               "nodeType": "Block",
               "src": "568:3:30",
               "statements": []
             },
-            "id": 10316,
+            "id": 10403,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -461,19 +461,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10313,
+              "id": 10400,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "550:2:30"
             },
             "payable": true,
             "returnParameters": {
-              "id": 10314,
+              "id": 10401,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "568:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "542:29:30",
             "stateMutability": "payable",
             "superFunction": null,
@@ -481,7 +481,7 @@
           },
           {
             "body": {
-              "id": 10392,
+              "id": 10479,
               "nodeType": "Block",
               "src": "854:901:30",
               "statements": [
@@ -490,10 +490,10 @@
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 10326,
+                      "id": 10413,
                       "name": "minConversionRate",
                       "nodeType": "VariableDeclaration",
-                      "scope": 10393,
+                      "scope": 10480,
                       "src": "865:22:30",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -502,7 +502,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 10325,
+                        "id": 10412,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "865:4:30",
@@ -515,7 +515,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 10327,
+                  "id": 10414,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "865:22:30"
@@ -531,18 +531,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 10331,
+                              "id": 10418,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 14042,
+                              "referencedDeclaration": 14129,
                               "src": "987:3:30",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
                               }
                             },
-                            "id": 10332,
+                            "id": 10419,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -561,14 +561,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10334,
+                                "id": 10421,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 14119,
+                                "referencedDeclaration": 14204,
                                 "src": "1007:4:30",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10394",
+                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10481",
                                   "typeString": "contract SwapTokenToEther"
                                 }
                               }
@@ -576,11 +576,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10394",
+                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10481",
                                   "typeString": "contract SwapTokenToEther"
                                 }
                               ],
-                              "id": 10333,
+                              "id": 10420,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -593,7 +593,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10335,
+                            "id": 10422,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -609,11 +609,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 10336,
+                            "id": 10423,
                             "name": "tokenQty",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10320,
+                            "referencedDeclaration": 10407,
                             "src": "1014:8:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -638,18 +638,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10329,
+                            "id": 10416,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "968:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10330,
+                          "id": 10417,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -663,7 +663,7 @@
                             "typeString": "function (address,address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10337,
+                        "id": 10424,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -685,18 +685,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10328,
+                      "id": 10415,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "960:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10338,
+                    "id": 10425,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -710,7 +710,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10339,
+                  "id": 10426,
                   "nodeType": "ExpressionStatement",
                   "src": "960:64:30"
                 },
@@ -726,11 +726,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10344,
+                                "id": 10431,
                                 "name": "proxy",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 10297,
+                                "referencedDeclaration": 10384,
                                 "src": "1172:5:30",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -745,7 +745,7 @@
                                   "typeString": "contract KyberNetworkProxy"
                                 }
                               ],
-                              "id": 10343,
+                              "id": 10430,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -758,7 +758,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10345,
+                            "id": 10432,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -775,7 +775,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 10346,
+                            "id": 10433,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -804,18 +804,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10341,
+                            "id": 10428,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "1150:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10342,
+                          "id": 10429,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -829,7 +829,7 @@
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10347,
+                        "id": 10434,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -851,18 +851,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10340,
+                      "id": 10427,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "1142:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10348,
+                    "id": 10435,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -876,7 +876,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10349,
+                  "id": 10436,
                   "nodeType": "ExpressionStatement",
                   "src": "1142:41:30"
                 },
@@ -892,11 +892,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10354,
+                                "id": 10441,
                                 "name": "proxy",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 10297,
+                                "referencedDeclaration": 10384,
                                 "src": "1284:5:30",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -911,7 +911,7 @@
                                   "typeString": "contract KyberNetworkProxy"
                                 }
                               ],
-                              "id": 10353,
+                              "id": 10440,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -924,7 +924,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10355,
+                            "id": 10442,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -940,11 +940,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 10356,
+                            "id": 10443,
                             "name": "tokenQty",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10320,
+                            "referencedDeclaration": 10407,
                             "src": "1292:8:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -965,18 +965,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10351,
+                            "id": 10438,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "1262:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10352,
+                          "id": 10439,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -990,7 +990,7 @@
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10357,
+                        "id": 10444,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1012,18 +1012,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10350,
+                      "id": 10437,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "1254:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10358,
+                    "id": 10445,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1037,14 +1037,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10359,
+                  "id": 10446,
                   "nodeType": "ExpressionStatement",
                   "src": "1254:48:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10368,
+                    "id": 10455,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1054,11 +1054,11 @@
                       "components": [
                         {
                           "argumentTypes": null,
-                          "id": 10360,
+                          "id": 10447,
                           "name": "minConversionRate",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10326,
+                          "referencedDeclaration": 10413,
                           "src": "1360:17:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1067,7 +1067,7 @@
                         },
                         null
                       ],
-                      "id": 10361,
+                      "id": 10448,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": true,
@@ -1087,11 +1087,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 10364,
+                          "id": 10451,
                           "name": "token",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10318,
+                          "referencedDeclaration": 10405,
                           "src": "1404:5:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -1100,11 +1100,11 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 10365,
+                          "id": 10452,
                           "name": "ETH_TOKEN_ADDRESS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10302,
+                          "referencedDeclaration": 10389,
                           "src": "1411:17:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -1113,11 +1113,11 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 10366,
+                          "id": 10453,
                           "name": "tokenQty",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10320,
+                          "referencedDeclaration": 10407,
                           "src": "1430:8:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1142,18 +1142,18 @@
                         ],
                         "expression": {
                           "argumentTypes": null,
-                          "id": 10362,
+                          "id": 10449,
                           "name": "proxy",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10297,
+                          "referencedDeclaration": 10384,
                           "src": "1382:5:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
                             "typeString": "contract KyberNetworkProxy"
                           }
                         },
-                        "id": 10363,
+                        "id": 10450,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1167,7 +1167,7 @@
                           "typeString": "function (contract ERC20,contract ERC20,uint256) view external returns (uint256,uint256)"
                         }
                       },
-                      "id": 10367,
+                      "id": 10454,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1187,21 +1187,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10369,
+                  "id": 10456,
                   "nodeType": "ExpressionStatement",
                   "src": "1359:80:30"
                 },
                 {
                   "assignments": [
-                    10371
+                    10458
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 10371,
+                      "id": 10458,
                       "name": "destAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 10393,
+                      "scope": 10480,
                       "src": "1492:15:30",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1210,7 +1210,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 10370,
+                        "id": 10457,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1492:4:30",
@@ -1223,17 +1223,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 10378,
+                  "id": 10465,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 10374,
+                        "id": 10461,
                         "name": "token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10318,
+                        "referencedDeclaration": 10405,
                         "src": "1533:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -1242,11 +1242,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10375,
+                        "id": 10462,
                         "name": "tokenQty",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10320,
+                        "referencedDeclaration": 10407,
                         "src": "1540:8:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1255,11 +1255,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10376,
+                        "id": 10463,
                         "name": "minConversionRate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10326,
+                        "referencedDeclaration": 10413,
                         "src": "1550:17:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1284,18 +1284,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 10372,
+                        "id": 10459,
                         "name": "proxy",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10297,
+                        "referencedDeclaration": 10384,
                         "src": "1510:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
                           "typeString": "contract KyberNetworkProxy"
                         }
                       },
-                      "id": 10373,
+                      "id": 10460,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1309,7 +1309,7 @@
                         "typeString": "function (contract ERC20,uint256,uint256) external returns (uint256)"
                       }
                     },
-                    "id": 10377,
+                    "id": 10464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1332,11 +1332,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 10382,
+                        "id": 10469,
                         "name": "destAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10371,
+                        "referencedDeclaration": 10458,
                         "src": "1662:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1353,18 +1353,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 10379,
+                        "id": 10466,
                         "name": "destAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10322,
+                        "referencedDeclaration": 10409,
                         "src": "1641:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
-                      "id": 10381,
+                      "id": 10468,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1378,7 +1378,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 10383,
+                    "id": 10470,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1392,7 +1392,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10384,
+                  "id": 10471,
                   "nodeType": "ExpressionStatement",
                   "src": "1641:32:30"
                 },
@@ -1404,18 +1404,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 10386,
+                          "id": 10473,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 14042,
+                          "referencedDeclaration": 14129,
                           "src": "1717:3:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 10387,
+                        "id": 10474,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1431,11 +1431,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10388,
+                        "id": 10475,
                         "name": "token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10318,
+                        "referencedDeclaration": 10405,
                         "src": "1729:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -1444,11 +1444,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10389,
+                        "id": 10476,
                         "name": "destAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10371,
+                        "referencedDeclaration": 10458,
                         "src": "1736:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1471,18 +1471,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 10385,
+                      "id": 10472,
                       "name": "Swap",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10295,
+                      "referencedDeclaration": 10382,
                       "src": "1712:4:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_contract$_ERC20_$1559_$_t_uint256_$returns$__$",
                         "typeString": "function (address,contract ERC20,uint256)"
                       }
                     },
-                    "id": 10390,
+                    "id": 10477,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1496,13 +1496,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10391,
+                  "id": 10478,
                   "nodeType": "ExpressionStatement",
                   "src": "1712:35:30"
                 }
               ]
             },
-            "id": 10393,
+            "id": 10480,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1510,15 +1510,15 @@
             "name": "execSwap",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10323,
+              "id": 10410,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10318,
+                  "id": 10405,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "798:11:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1528,7 +1528,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10317,
+                    "id": 10404,
                     "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 1559,
@@ -1543,10 +1543,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 10320,
+                  "id": 10407,
                   "name": "tokenQty",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "811:13:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1555,7 +1555,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10319,
+                    "id": 10406,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "811:4:30",
@@ -1569,10 +1569,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 10322,
+                  "id": 10409,
                   "name": "destAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "826:19:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1581,7 +1581,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 10321,
+                    "id": 10408,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "826:7:30",
@@ -1598,19 +1598,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 10324,
+              "id": 10411,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "854:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "780:975:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10395,
+        "scope": 10482,
         "src": "68:1690:30"
       }
     ],
@@ -1620,14 +1620,14 @@
     "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/examples/SwapTokenToEther.sol",
     "exportedSymbols": {
       "SwapTokenToEther": [
-        10394
+        10481
       ]
     },
-    "id": 10395,
+    "id": 10482,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10286,
+        "id": 10373,
         "literals": [
           "solidity",
           "^",
@@ -1640,9 +1640,9 @@
       {
         "absolutePath": "/C/Users/phangjunyu/desktop/ethsg-lenXe/kyber/contracts/KyberNetworkProxy.sol",
         "file": "../KyberNetworkProxy.sol",
-        "id": 10287,
+        "id": 10374,
         "nodeType": "ImportDirective",
-        "scope": 10395,
+        "scope": 10482,
         "sourceUnit": 5457,
         "src": "28:34:30",
         "symbolAliases": [],
@@ -1654,29 +1654,29 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10394,
+        "id": 10481,
         "linearizedBaseContracts": [
-          10394
+          10481
         ],
         "name": "SwapTokenToEther",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 10295,
+            "id": 10382,
             "name": "Swap",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 10294,
+              "id": 10381,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10289,
+                  "id": 10376,
                   "indexed": true,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "112:22:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1685,7 +1685,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 10288,
+                    "id": 10375,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "112:7:30",
@@ -1699,11 +1699,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 10291,
+                  "id": 10378,
                   "indexed": false,
                   "name": "srcToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "136:14:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1713,7 +1713,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10290,
+                    "id": 10377,
                     "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 1559,
@@ -1728,11 +1728,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 10293,
+                  "id": 10380,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10295,
+                  "scope": 10382,
                   "src": "152:11:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1741,7 +1741,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10292,
+                    "id": 10379,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:4:30",
@@ -1760,10 +1760,10 @@
           },
           {
             "constant": false,
-            "id": 10297,
+            "id": 10384,
             "name": "proxy",
             "nodeType": "VariableDeclaration",
-            "scope": 10394,
+            "scope": 10481,
             "src": "173:30:30",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1773,7 +1773,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 10296,
+              "id": 10383,
               "name": "KyberNetworkProxy",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5456,
@@ -1788,10 +1788,10 @@
           },
           {
             "constant": true,
-            "id": 10302,
+            "id": 10389,
             "name": "ETH_TOKEN_ADDRESS",
             "nodeType": "VariableDeclaration",
-            "scope": 10394,
+            "scope": 10481,
             "src": "210:95:30",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1801,7 +1801,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 10298,
+              "id": 10385,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1559,
@@ -1817,7 +1817,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "3078303065656565656565656565656565656565656565656565656565656565656565656565656565656565",
-                  "id": 10300,
+                  "id": 10387,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1840,7 +1840,7 @@
                     "typeString": "int_const 1364068194842176056990105843868530818345537040110"
                   }
                 ],
-                "id": 10299,
+                "id": 10386,
                 "name": "ERC20",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -1851,7 +1851,7 @@
                   "typeString": "type(contract ERC20)"
                 }
               },
-              "id": 10301,
+              "id": 10388,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1869,25 +1869,25 @@
           },
           {
             "body": {
-              "id": 10311,
+              "id": 10398,
               "nodeType": "Block",
               "src": "463:33:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10309,
+                    "id": 10396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10307,
+                      "id": 10394,
                       "name": "proxy",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10297,
+                      "referencedDeclaration": 10384,
                       "src": "474:5:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -1898,11 +1898,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10308,
+                      "id": 10395,
                       "name": "_proxy",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10304,
+                      "referencedDeclaration": 10391,
                       "src": "482:6:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -1915,13 +1915,13 @@
                       "typeString": "contract KyberNetworkProxy"
                     }
                   },
-                  "id": 10310,
+                  "id": 10397,
                   "nodeType": "ExpressionStatement",
                   "src": "474:14:30"
                 }
               ]
             },
-            "id": 10312,
+            "id": 10399,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1929,15 +1929,15 @@
             "name": "SwapTokenToEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10305,
+              "id": 10392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10304,
+                  "id": 10391,
                   "name": "_proxy",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10312,
+                  "scope": 10399,
                   "src": "430:24:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1947,7 +1947,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10303,
+                    "id": 10390,
                     "name": "KyberNetworkProxy",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 5456,
@@ -1965,12 +1965,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 10306,
+              "id": 10393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "463:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "404:92:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1978,12 +1978,12 @@
           },
           {
             "body": {
-              "id": 10315,
+              "id": 10402,
               "nodeType": "Block",
               "src": "568:3:30",
               "statements": []
             },
-            "id": 10316,
+            "id": 10403,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1991,19 +1991,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10313,
+              "id": 10400,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "550:2:30"
             },
             "payable": true,
             "returnParameters": {
-              "id": 10314,
+              "id": 10401,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "568:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "542:29:30",
             "stateMutability": "payable",
             "superFunction": null,
@@ -2011,7 +2011,7 @@
           },
           {
             "body": {
-              "id": 10392,
+              "id": 10479,
               "nodeType": "Block",
               "src": "854:901:30",
               "statements": [
@@ -2020,10 +2020,10 @@
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 10326,
+                      "id": 10413,
                       "name": "minConversionRate",
                       "nodeType": "VariableDeclaration",
-                      "scope": 10393,
+                      "scope": 10480,
                       "src": "865:22:30",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2032,7 +2032,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 10325,
+                        "id": 10412,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "865:4:30",
@@ -2045,7 +2045,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 10327,
+                  "id": 10414,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "865:22:30"
@@ -2061,18 +2061,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 10331,
+                              "id": 10418,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 14042,
+                              "referencedDeclaration": 14129,
                               "src": "987:3:30",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
                               }
                             },
-                            "id": 10332,
+                            "id": 10419,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2091,14 +2091,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10334,
+                                "id": 10421,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 14119,
+                                "referencedDeclaration": 14204,
                                 "src": "1007:4:30",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10394",
+                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10481",
                                   "typeString": "contract SwapTokenToEther"
                                 }
                               }
@@ -2106,11 +2106,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10394",
+                                  "typeIdentifier": "t_contract$_SwapTokenToEther_$10481",
                                   "typeString": "contract SwapTokenToEther"
                                 }
                               ],
-                              "id": 10333,
+                              "id": 10420,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2123,7 +2123,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10335,
+                            "id": 10422,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2139,11 +2139,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 10336,
+                            "id": 10423,
                             "name": "tokenQty",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10320,
+                            "referencedDeclaration": 10407,
                             "src": "1014:8:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2168,18 +2168,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10329,
+                            "id": 10416,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "968:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10330,
+                          "id": 10417,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2193,7 +2193,7 @@
                             "typeString": "function (address,address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10337,
+                        "id": 10424,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2215,18 +2215,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10328,
+                      "id": 10415,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "960:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10338,
+                    "id": 10425,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2240,7 +2240,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10339,
+                  "id": 10426,
                   "nodeType": "ExpressionStatement",
                   "src": "960:64:30"
                 },
@@ -2256,11 +2256,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10344,
+                                "id": 10431,
                                 "name": "proxy",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 10297,
+                                "referencedDeclaration": 10384,
                                 "src": "1172:5:30",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -2275,7 +2275,7 @@
                                   "typeString": "contract KyberNetworkProxy"
                                 }
                               ],
-                              "id": 10343,
+                              "id": 10430,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2288,7 +2288,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10345,
+                            "id": 10432,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2305,7 +2305,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 10346,
+                            "id": 10433,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2334,18 +2334,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10341,
+                            "id": 10428,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "1150:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10342,
+                          "id": 10429,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2359,7 +2359,7 @@
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10347,
+                        "id": 10434,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2381,18 +2381,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10340,
+                      "id": 10427,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "1142:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10348,
+                    "id": 10435,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2406,7 +2406,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10349,
+                  "id": 10436,
                   "nodeType": "ExpressionStatement",
                   "src": "1142:41:30"
                 },
@@ -2422,11 +2422,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 10354,
+                                "id": 10441,
                                 "name": "proxy",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 10297,
+                                "referencedDeclaration": 10384,
                                 "src": "1284:5:30",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
@@ -2441,7 +2441,7 @@
                                   "typeString": "contract KyberNetworkProxy"
                                 }
                               ],
-                              "id": 10353,
+                              "id": 10440,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2454,7 +2454,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 10355,
+                            "id": 10442,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2470,11 +2470,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 10356,
+                            "id": 10443,
                             "name": "tokenQty",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10320,
+                            "referencedDeclaration": 10407,
                             "src": "1292:8:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2495,18 +2495,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 10351,
+                            "id": 10438,
                             "name": "token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10318,
+                            "referencedDeclaration": 10405,
                             "src": "1262:5:30",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_ERC20_$1559",
                               "typeString": "contract ERC20"
                             }
                           },
-                          "id": 10352,
+                          "id": 10439,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2520,7 +2520,7 @@
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 10357,
+                        "id": 10444,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2542,18 +2542,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 10350,
+                      "id": 10437,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14045,
+                      "referencedDeclaration": 14132,
                       "src": "1254:7:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 10358,
+                    "id": 10445,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2567,14 +2567,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10359,
+                  "id": 10446,
                   "nodeType": "ExpressionStatement",
                   "src": "1254:48:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10368,
+                    "id": 10455,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2584,11 +2584,11 @@
                       "components": [
                         {
                           "argumentTypes": null,
-                          "id": 10360,
+                          "id": 10447,
                           "name": "minConversionRate",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10326,
+                          "referencedDeclaration": 10413,
                           "src": "1360:17:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2597,7 +2597,7 @@
                         },
                         null
                       ],
-                      "id": 10361,
+                      "id": 10448,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": true,
@@ -2617,11 +2617,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 10364,
+                          "id": 10451,
                           "name": "token",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10318,
+                          "referencedDeclaration": 10405,
                           "src": "1404:5:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -2630,11 +2630,11 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 10365,
+                          "id": 10452,
                           "name": "ETH_TOKEN_ADDRESS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10302,
+                          "referencedDeclaration": 10389,
                           "src": "1411:17:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -2643,11 +2643,11 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 10366,
+                          "id": 10453,
                           "name": "tokenQty",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10320,
+                          "referencedDeclaration": 10407,
                           "src": "1430:8:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2672,18 +2672,18 @@
                         ],
                         "expression": {
                           "argumentTypes": null,
-                          "id": 10362,
+                          "id": 10449,
                           "name": "proxy",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10297,
+                          "referencedDeclaration": 10384,
                           "src": "1382:5:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
                             "typeString": "contract KyberNetworkProxy"
                           }
                         },
-                        "id": 10363,
+                        "id": 10450,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2697,7 +2697,7 @@
                           "typeString": "function (contract ERC20,contract ERC20,uint256) view external returns (uint256,uint256)"
                         }
                       },
-                      "id": 10367,
+                      "id": 10454,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2717,21 +2717,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10369,
+                  "id": 10456,
                   "nodeType": "ExpressionStatement",
                   "src": "1359:80:30"
                 },
                 {
                   "assignments": [
-                    10371
+                    10458
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 10371,
+                      "id": 10458,
                       "name": "destAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 10393,
+                      "scope": 10480,
                       "src": "1492:15:30",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2740,7 +2740,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 10370,
+                        "id": 10457,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1492:4:30",
@@ -2753,17 +2753,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 10378,
+                  "id": 10465,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 10374,
+                        "id": 10461,
                         "name": "token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10318,
+                        "referencedDeclaration": 10405,
                         "src": "1533:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -2772,11 +2772,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10375,
+                        "id": 10462,
                         "name": "tokenQty",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10320,
+                        "referencedDeclaration": 10407,
                         "src": "1540:8:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2785,11 +2785,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10376,
+                        "id": 10463,
                         "name": "minConversionRate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10326,
+                        "referencedDeclaration": 10413,
                         "src": "1550:17:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2814,18 +2814,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 10372,
+                        "id": 10459,
                         "name": "proxy",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10297,
+                        "referencedDeclaration": 10384,
                         "src": "1510:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_KyberNetworkProxy_$5456",
                           "typeString": "contract KyberNetworkProxy"
                         }
                       },
-                      "id": 10373,
+                      "id": 10460,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2839,7 +2839,7 @@
                         "typeString": "function (contract ERC20,uint256,uint256) external returns (uint256)"
                       }
                     },
-                    "id": 10377,
+                    "id": 10464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2862,11 +2862,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 10382,
+                        "id": 10469,
                         "name": "destAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10371,
+                        "referencedDeclaration": 10458,
                         "src": "1662:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2883,18 +2883,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 10379,
+                        "id": 10466,
                         "name": "destAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10322,
+                        "referencedDeclaration": 10409,
                         "src": "1641:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
-                      "id": 10381,
+                      "id": 10468,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2908,7 +2908,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 10383,
+                    "id": 10470,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2922,7 +2922,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10384,
+                  "id": 10471,
                   "nodeType": "ExpressionStatement",
                   "src": "1641:32:30"
                 },
@@ -2934,18 +2934,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 10386,
+                          "id": 10473,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 14042,
+                          "referencedDeclaration": 14129,
                           "src": "1717:3:30",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 10387,
+                        "id": 10474,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2961,11 +2961,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10388,
+                        "id": 10475,
                         "name": "token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10318,
+                        "referencedDeclaration": 10405,
                         "src": "1729:5:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC20_$1559",
@@ -2974,11 +2974,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 10389,
+                        "id": 10476,
                         "name": "destAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10371,
+                        "referencedDeclaration": 10458,
                         "src": "1736:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3001,18 +3001,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 10385,
+                      "id": 10472,
                       "name": "Swap",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10295,
+                      "referencedDeclaration": 10382,
                       "src": "1712:4:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_contract$_ERC20_$1559_$_t_uint256_$returns$__$",
                         "typeString": "function (address,contract ERC20,uint256)"
                       }
                     },
-                    "id": 10390,
+                    "id": 10477,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3026,13 +3026,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 10391,
+                  "id": 10478,
                   "nodeType": "ExpressionStatement",
                   "src": "1712:35:30"
                 }
               ]
             },
-            "id": 10393,
+            "id": 10480,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3040,15 +3040,15 @@
             "name": "execSwap",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10323,
+              "id": 10410,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10318,
+                  "id": 10405,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "798:11:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3058,7 +3058,7 @@
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 10317,
+                    "id": 10404,
                     "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 1559,
@@ -3073,10 +3073,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 10320,
+                  "id": 10407,
                   "name": "tokenQty",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "811:13:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3085,7 +3085,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10319,
+                    "id": 10406,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "811:4:30",
@@ -3099,10 +3099,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 10322,
+                  "id": 10409,
                   "name": "destAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10393,
+                  "scope": 10480,
                   "src": "826:19:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3111,7 +3111,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 10321,
+                    "id": 10408,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "826:7:30",
@@ -3128,19 +3128,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 10324,
+              "id": 10411,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "854:0:30"
             },
-            "scope": 10394,
+            "scope": 10481,
             "src": "780:975:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10395,
+        "scope": 10482,
         "src": "68:1690:30"
       }
     ],
@@ -3151,13 +3151,13 @@
     "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
   },
   "networks": {
-    "5777": {
+    "50": {
       "events": {},
       "links": {},
-      "address": "0xdE4e2118f45f1b27699B25004563819B57f5E3b2",
-      "transactionHash": "0xd285fea66d0d58e0a1da6cc1312dfe26e4a77a6426b78eff8292dcbfe9149a8a"
+      "address": "0x38ef19fDf8E8415f18c307Ed71967e19Aac28Ba1",
+      "transactionHash": "0x1a65df0a06d01231af70c35cd8fa85908019024ad1b668d9f8decd1a65d6315b"
     }
   },
   "schemaVersion": "3.0.0-beta.1",
-  "updatedAt": "2018-12-08T20:25:56.245Z"
+  "updatedAt": "2018-12-09T02:57:55.469Z"
 }
